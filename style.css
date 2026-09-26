@@ -1,0 +1,66 @@
+/* ===== Queen's colours ===== */
+:root {
+  --red: #b90e31;
+  --gold: #fabd0f;
+  --blue: #002452;
+  --text: #1a1a1a;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--red);
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--blue);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid var(--gold);
+}
+header h1 { margin: 0; }
+.tagline { margin: 0.25rem 0 0; color: var(--gold); }
+
+/* ===== Main card ===== */
+main {
+  background: #fff;
+  color: var(--text);
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+section + section { margin-top: 1.5rem; }
+
+h2 {
+  color: var(--blue);
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.25rem;
+}
+
+a { color: var(--blue); }
+
+/* ===== Photo ===== */
+.portrait {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 12px;
+  border: 3px solid var(--gold);
+  object-fit: cover;
+}
+#about::after { content: ""; display: block; clear: both; }
+
+/* ===== Footer ===== */
+footer { text-align: center; padding: 0 1rem 1.5rem; font-size: 0.9rem; }
+
+/* ===== Phones: stack photo above text ===== */
+@media (max-width: 600px) {
+  main { margin: 1rem; padding: 1rem; }
+  .portrait { float: none; display: block; margin: 0 auto 1rem; max-width: 100%; height: auto; }
+}

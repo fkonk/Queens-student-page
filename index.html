@@ -3,33 +3,63 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>My Queen’s Student Page</title>
-    <link rel="stylesheet" href="style.css"/> <!-- do not change this line -->
+    <meta name="description" content="Finn Konkin: first-year General Science student at Queen's University."/>
+    <title>Finn Konkin | Queen's Student Page</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+    <!-- ====== HEADER: name + one-line intro ====== -->
     <header>
-      <h1>Finn Konkin</h1> <!-- change this heading to your name -->
+      <h1>Finn Konkin</h1>
+      <p class="tagline">First-year General Science (BScH) · Queen's University</p>
     </header>
 
     <main>
-      <!-- ====== ABOUT SECTION (edit the text) ====== -->
-      <h2>About Me</h2>
-      <p>I am a student at Queen’s School of Computing. I’m interested in Triathlons and Motersports <!-- replace with interests -->.</p>
+      <!-- ====== ABOUT SECTION ====== -->
+      <section id="about">
+        <h2>About Me</h2>
+        <img class="portrait" src="me.jpg" alt="Finn Konkin in front of the Puente Nuevo bridge in Ronda, Spain" width="240" height="320"/>
+        <p>
+          I'm a first-year General Science student at Queen's, originally from North Vancouver, BC.
+          I'm planning to head into Computing after first year.
+        </p>
+        <p>
+          Outside of class I'm into motorsports (especially F1) and triathlons. I raced the
+          Olympic distance at the 2026 Vancouver T100 and I'm training for the full T100 distance in 2027.
+        </p>
+      </section>
 
-      <!-- ====== PHOTO (upload me.jpg to repo root, then update the src below) ====== -->
-      <img src="me.jpg" alt="Your Name portrait" width="240" height="240" />
+      <!-- ====== COURSES (Fall 2026) ====== -->
+      <section id="courses">
+        <h2>Courses</h2>
+        <ul>
+          <li><strong>CISC 121</strong> — Introduction to Computing Science I</li>
+          <li><strong>MATH 121</strong> — Differential and Integral Calculus</li>
+          <li><strong>PHYS 106</strong> — General Physics</li>
+          <li><strong>CHEM 112</strong> — General Chemistry</li>
+          <li><strong>BIOL 103</strong> — Introductory Biology of Cells</li>
+        </ul>
+      </section>
 
-      <!-- ====== PROJECTS/COURSES (add or rename items to courses instead of projects) ====== -->
-      <h2>Projects</h2>
-      <ul>
-        <li>Project One — one sentence description.</li>
-        <li>Project Two — coming soon.</li>
-      </ul>
+      <!-- ====== PROJECTS ====== -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Red Bull Racing project</strong> — a high school project digging into F1 car engineering.</li>
+          <li><strong>Endurance training coach app</strong> — a personal app (Python/FastAPI + React) that pulls in training data to plan workouts. In progress.</li>
+          <li><strong>This page</strong> — my first site on GitHub Pages for CISC 121.</li>
+        </ul>
+      </section>
 
-      <!-- ====== CONTACT (update your links) ====== -->
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:student@queensu.ca">student@queensu.ca</a></p>
-      <p>LinkedIn: <a href="#">add your link here</a></p>
+      <!-- ====== CONTACT ====== -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/finn-konkin-368446325/" target="_blank" rel="noopener noreferrer">linkedin.com/in/finn-konkin</a></p>
+      </section>
     </main>
+
+    <footer>
+      <p>© 2026 Finn Konkin · Built with HTML &amp; CSS on GitHub Pages</p>
+    </footer>
   </body>
 </html>
